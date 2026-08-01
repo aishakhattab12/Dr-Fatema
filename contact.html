@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معي | د. فاطمة أحمد الخطاب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-heart-pulse"></i><span>د. فاطمة الخطاب</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عن الباحثة</a></li>
+                <li><a href="articles.html">المقالات الطبية</a></li>
+                <li><a href="contact.html" class="active">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="https://wa.me/201069470142" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>تواصل مع الباحثة والصيدلانية</h2>
+                <p>نسعد بتلقي استفساراتكم واقتراحاتكم العلمية</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- معلومات التواصل -->
+                <div class="contact-info">
+                    <h3>معلومات الاتصال المباشر</h3>
+                    <p>يمكنك التواصل معي مباشرة عبر قنوات الاتصال التالية أو عبر نموذج البريد:</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <strong>واتساب (مباشر)</strong>
+                                <a href="https://wa.me/201069470142" target="_blank">+20 1069470142</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>رقم الهاتف</strong>
+                                <span>+20 1069470142</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>البريد الإلكتروني</strong>
+                                <span>fatma.khattab@pharmacy.edu</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>الموقع الأكاديمي</strong>
+                                <span>كلية الصيدلة، مصر</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-icons" style="margin-top: 30px;">
+                        <a href="https://wa.me/201069470142" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- نموذج الإرسال -->
+                <div class="contact-form-box">
+                    <form onsubmit="event.preventDefault(); alert('تم ارسال رسالتك بنجاح! سنقوم بالرد عليك قريباً.');" class="form-card">
+                        <h3>أرسل رسالة نصية</h3>
+                        <div class="form-group">
+                            <label>الاسم الكامل</label>
+                            <input type="text" placeholder="أدخل اسمك..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" placeholder="أدخل بريدك الإلكتروني..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>الرسالة أو الاستفسار</label>
+                            <textarea rows="5" placeholder="اكتب استفسارك الطبي هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">إرسال الرسالة <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- خريطة Google Maps Placeholder -->
+            <div class="map-container" style="margin-top: 60px;">
+                <div class="map-placeholder-box">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3>موقع كلية الصيدلة</h3>
+                    <p>جمهورية مصر العربية - متواجدون لدعم البحث العلمي والتوعية الصيدلانية</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 د. فاطمة أحمد إبراهيم المرغني خطاب. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

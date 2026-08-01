@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقالات الطبية والدلائل الدوائية | د. فاطمة الخطاب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-heart-pulse"></i><span>د. فاطمة الخطاب</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عن الباحثة</a></li>
+                <li><a href="articles.html" class="active">المقالات الطبية</a></li>
+                <li><a href="contact.html">تواصل معي</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="https://wa.me/201069470142" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>دليل المقالات والأبحاث الطبية</h2>
+                <p>مكتبة متكاملة تضم 20 مقالاً طبياً موثوقاً في الفيتامينات والأدوية والصحة العامة</p>
+            </div>
+
+            <!-- صندوق البحث والتصفية -->
+            <div class="search-filter-container">
+                <div class="search-box-wrapper">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="article-search" placeholder="ابحث عن فيتامين، دواء، أو حالة مرضية...">
+                </div>
+                <div class="categories-filter">
+                    <button class="filter-btn active" data-category="all">الكل</button>
+                    <button class="filter-btn" data-category="vitamins">فيتامينات</button>
+                    <button class="filter-btn" data-category="medications">أدوية وعلاجات</button>
+                    <button class="filter-btn" data-category="health">صحة عامة</button>
+                </div>
+            </div>
+
+            <!-- شبكة المقالات الـ 20 -->
+            <div class="grid-3" id="articles-grid">
+                <!-- 1. فيتامين د -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامين د الدليل الشامل للصحة والمناعة">
+                    <div class="article-img"><i class="fa-solid fa-sun"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>فيتامين د: الدليل الشامل للصحة والمناعة</h3>
+                        <p>أهمية فيتامين الشمس، أعراض النقص، الجرعات الآمنة والمصادر.</p>
+                        <a href="articles/vitamin-d.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 2. فيتامين سي -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامين سي ومقاومة نزلات البرد">
+                    <div class="article-img"><i class="fa-solid fa-shield-virus"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 4 دقائق</span></div>
+                        <h3>فيتامين سي ومقاومة نزلات البرد</h3>
+                        <p>كيف يعمل حمض الأسكوربيك على دعم الجهاز المناعي وتقليل حدة الإنفلونزا.</p>
+                        <a href="articles/vitamin-c.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 3. فيتامين ب12 -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامين ب12 ودعم الجهاز العصبي">
+                    <div class="article-img"><i class="fa-solid fa-brain"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>فيتامين ب12 ودعم الجهاز العصبي</h3>
+                        <p>أهمية الكوبالامين لتوليد الطاقة، الوقاية من الأنيميا وصحة الأعصاب.</p>
+                        <a href="articles/vitamin-b12.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 4. فيتامين أ -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامين أ وصحة العينين والبشرة">
+                    <div class="article-img"><i class="fa-solid fa-eye"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 4 دقائق</span></div>
+                        <h3>فيتامين أ وصحة العينين والبشرة</h3>
+                        <p>الريتينول ودوره الأساسي في الرؤية الليلية وتجديد الخلايا.</p>
+                        <a href="articles/vitamin-a.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 5. فيتامين إي -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامين إي مضاد الأكسدة القوي">
+                    <div class="article-img"><i class="fa-solid fa-spa"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 4 دقائق</span></div>
+                        <h3>فيتامين إي مضاد الأكسدة القوي</h3>
+                        <p>حماية الخلايا من التلف، نضارة البشرة ودعم صحة القلب.</p>
+                        <a href="articles/vitamin-e.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 6. فيتامين ك -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامين ك وتخثر الدم السليم">
+                    <div class="article-img"><i class="fa-solid fa-droplet"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 4 دقائق</span></div>
+                        <h3>فيتامين ك وتخثر الدم السليم</h3>
+                        <p>دوره الحيوي في تجلط الدم وصحة العظام وتفاعلrefالأدوية.</p>
+                        <a href="articles/vitamin-k.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 7. الحديد -->
+                <article class="article-card" data-category="vitamins" data-title="الحديد وعلاج فقر الدم الأنيميا">
+                    <div class="article-img"><i class="fa-solid fa-bone"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 6 دقائق</span></div>
+                        <h3>الحديد وعلاج فقر الدم الأنيميا</h3>
+                        <p>إنتاج الهيموجلوبين، نقل الأكسجين، وطرق زيادة الامتصاص.</p>
+                        <a href="articles/iron.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 8. الكالسيوم -->
+                <article class="article-card" data-category="vitamins" data-title="الكالسيوم وصحة العظام والأسنان">
+                    <div class="article-img"><i class="fa-solid fa-shield-halved"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>الكالسيوم وصحة العظام والأسنان</h3>
+                        <p>الوقاية من هشاشة العظام ودور فيتامين د في امتصاصه.</p>
+                        <a href="articles/calcium.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 9. المغنيسيوم -->
+                <article class="article-card" data-category="vitamins" data-title="المغنيسيوممعدن الطاقة الاسترخاء">
+                    <div class="article-img"><i class="fa-solid fa-bolt"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>المغنيسيوم معدن الطاقة والاسترخاء</h3>
+                        <p>دعم الوظائف العضلية والعصبية وتحسين جودة النوم.</p>
+                        <a href="articles/magnesium.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 10. أوميغا 3 -->
+                <article class="article-card" data-category="vitamins" data-title="أوميغا 3 الأحماض الدهنية للقلب">
+                    <div class="article-img"><i class="fa-solid fa-fish"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 6 دقائق</span></div>
+                        <h3>أوميغا 3 الأحماض الدهنية للقلب</h3>
+                        <p>صحة الدماغ، خفض الدهون الثلاثية ومحاربة الالتهابات.</p>
+                        <a href="articles/omega-3.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 11. المضادات الحيوية -->
+                <article class="article-card" data-category="medications" data-title="المضادات الحيوية الاستخدام الآمن">
+                    <div class="article-img"><i class="fa-solid fa-pills"></i><span class="category-tag">أدوية</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 6 دقائق</span></div>
+                        <h3>المضادات الحيوية: الاستخدام الآمن ومخاطر المقاومة</h3>
+                        <p>لماذا لا يجب استخدام المضادات الحيوية في نزلات البرد والفيروسات؟</p>
+                        <a href="articles/antibiotics.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 12. مسكنات الألم -->
+                <article class="article-card" data-category="medications" data-title="مسكنات الألم الحدود الآمنة">
+                    <div class="article-img"><i class="fa-solid fa-capsules"></i><span class="category-tag">أدوية</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>مسكنات الألم والحدود الآمنة للاستخدام</h3>
+                        <p>الفرق بين الباراسيتامول ومضادات الالتهاب غير Steroidal ومخاطر الإفراط.</p>
+                        <a href="articles/painkillers.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 13. السكري -->
+                <article class="article-card" data-category="health" data-title="التعايش الآمن مع مرض السكري">
+                    <div class="article-img"><i class="fa-solid fa-heart-pulse"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 6 دقائق</span></div>
+                        <h3>التعايش الآمن مع مرض السكري</h3>
+                        <p>إرشادات صيدلانية حول تنظيم السكر، مراقبة الجلوكوز والوقاية.</p>
+                        <a href="articles/diabetes.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 14. ضغط الدم -->
+                <article class="article-card" data-category="health" data-title="ارتفاع ضغط الدم القاتل الصامت">
+                    <div class="article-img"><i class="fa-solid fa-stethoscope"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>ارتفاع ضغط الدم: القاتل الصامت</h3>
+                        <p>كيفية قراءة القياسات، أهمية الأدوية وتعديل نمط الحياة.</p>
+                        <a href="articles/blood-pressure.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 15. تغذية الحوامل -->
+                <article class="article-card" data-category="health" data-title="تغدية الحوامل والفيتامينات">
+                    <div class="article-img"><i class="fa-solid fa-baby"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 6 دقائق</span></div>
+                        <h3>تغذية الحوامل وأهمية المكملات الغذائية</h3>
+                        <p>حمض الفوليك، الحديد، والفيتامينات الأساسية لصحة الأم والجنين.</p>
+                        <a href="articles/pregnancy-nutrition.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 16. أسلوب حياة صحي -->
+                <article class="article-card" data-category="health" data-title="أسلوب الحياة الصحي والوقاية">
+                    <div class="article-img"><i class="fa-solid fa-person-running"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>أسلوب الحياة الصحي والوقاية من الأمراض</h3>
+                        <p>خطوات بسيطة نحو نظام غذائي متوازن ونشاط بدني مستدام.</p>
+                        <a href="articles/healthy-lifestyle.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 17. الجهاز المناعي -->
+                <article class="article-card" data-category="health" data-title="تقوية الجهاز المناعي طبيعياً">
+                    <div class="article-img"><i class="fa-solid fa-shield-heart"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>تقوية الجهاز المناعي بطرق علمية</h3>
+                        <p>العادات الغذائية والنوم وتأثيرها المباشر على خط الدفاع الأول.</p>
+                        <a href="articles/immune-system.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 18. فيتامينات الشعر -->
+                <article class="article-card" data-category="vitamins" data-title="فيتامينات الشعر وعلاج التساقط">
+                    <div class="article-img"><i class="fa-solid fa-hand-holding-medical"></i><span class="category-tag">فيتامينات</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 4 دقائق</span></div>
+                        <h3>فيتامينات الشعر وعلاج التساقط من الرور</h3>
+                        <p>البيوتين، الزنك، والمعادن الأساسية لتحفيز نمو بصيلات الشعر.</p>
+                        <a href="articles/hair-vitamins.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 19. العناية بالبشرة -->
+                <article class="article-card" data-category="health" data-title="العناية الطبية بالبشرة والروتين">
+                    <div class="article-img"><i class="fa-solid fa-face-smile"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 5 دقائق</span></div>
+                        <h3>العناية الطبية بالبشرة والروتين الصحيح</h3>
+                        <p>المرطبات، واقي الشمس، والتعامل العلمي مع مشاكل البشرة.</p>
+                        <a href="articles/skin-care.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                <!-- 20. الإسعافات الأولية -->
+                <article class="article-card" data-category="health" data-title="دليل الإسعافات الأولية المنزلية">
+                    <div class="article-img"><i class="fa-solid fa-kit-medical"></i><span class="category-tag">صحة عامة</span></div>
+                    <div class="article-body">
+                        <div class="meta"><span><i class="fa-regular fa-clock"></i> 6 دقائق</span></div>
+                        <h3>دليل الإسعافات الأولية المنزلية</h3>
+                        <p>كيفية التعامل مع الجروح، الحروق، حالات الإغماء والصدمات الطارئة.</p>
+                        <a href="articles/first-aid.html" class="read-more">اقرأ المقال <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 د. فاطمة أحمد إبراهيم المرغني خطاب. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
