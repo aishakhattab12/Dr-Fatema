@@ -1,0 +1,17 @@
+body.dark-mode {
+    --bg-color: #0b0f19;
+    --card-bg: rgba(17, 24, 39, 0.85);
+    --text-color: #f3f4f6;
+    --text-muted: #9ca3af;
+    --border-color: rgba(72, 202, 228, 0.15);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .header {
+    background: rgba(11, 15, 25, 0.85);
+}
+
+body.dark-mode #loading-screen {
+    background: #0b0f19;
+    color: #fff;
+}
